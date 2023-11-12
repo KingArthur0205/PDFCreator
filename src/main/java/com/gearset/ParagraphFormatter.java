@@ -4,7 +4,10 @@ import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.TabStop;
 import com.itextpdf.layout.element.Text;
+import com.itextpdf.layout.properties.HorizontalAlignment;
+import com.itextpdf.layout.properties.TabAlignment;
 import com.itextpdf.layout.properties.TextAlignment;
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Font;
@@ -13,6 +16,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
+import java.util.regex.Pattern;
 
 public class ParagraphFormatter {
     private Document document;
@@ -22,7 +26,7 @@ public class ParagraphFormatter {
     private PdfFont italicFont;
     private String font;
     private boolean fill = false;
-
+    private int indentSpace = 0;
 
     public ParagraphFormatter(Document document) throws IOException {
         this.document = document;
@@ -45,10 +49,8 @@ public class ParagraphFormatter {
                 handleIndent(paragraph);
             } else if (paragraph.startsWith(".fill")) {
                 currentParagraph.setTextAlignment(TextAlignment.JUSTIFIED);
-                //fill = true;
             } else if (paragraph.startsWith(".nofill")) {
                 currentParagraph.setTextAlignment(TextAlignment.LEFT);
-                //fill = false;
             } else if (paragraph.startsWith(".bold")) {
                 font = ".bold";
             } else if (paragraph.startsWith(".italics")) {
@@ -76,9 +78,9 @@ public class ParagraphFormatter {
 
     private void handleIndent(String line) {
         int indent = Integer.parseInt(line.split("\\s+")[1]);
-        currentParagraph.setMarginLeft(indent * -20); // Assuming one indent unit is 20 points.
+        indentSpace += indent * 20;
+        currentParagraph.setMarginLeft(indentSpace); // Assuming one indent unit is 20 points.
         document.add(currentParagraph);
-        currentParagraph = new Paragraph();
     }
 
     private void startNewParagraph() {
@@ -90,10 +92,10 @@ public class ParagraphFormatter {
 
     private void addText(List<String> texts) {
         for (int i = 0; i < texts.size(); ++i) {
-            String textStr = texts.get(i);
-            if (!textStr.trim().isEmpty()) {
-                Text text = new Text(textStr + " ");
+            String textStr = Pattern.matches("\\p{Punct}", texts.get(i).substring(0, 1)) ? texts.get(i) : " " + texts.get(i);
 
+            if (!textStr.trim().isEmpty()) {
+                Text text = new Text(textStr);
 
                 if (font != null) {
                     if (font.equals(".bold")) {
@@ -106,6 +108,7 @@ public class ParagraphFormatter {
                 }
 
                 currentParagraph.add(text);
+
             }
         }
     }
