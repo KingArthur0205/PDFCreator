@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/output.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/ParagraphFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/ParagraphFormatter.java" afterDir="false" />
     </list>
@@ -159,5 +158,16 @@
       <updated>1699395691253</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

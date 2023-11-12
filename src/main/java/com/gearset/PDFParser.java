@@ -7,6 +7,7 @@ import com.itextpdf.layout.Document;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Stack;
 
 public class PDFParser {
     private final String inputFile;
@@ -34,11 +35,22 @@ public class PDFParser {
 
     private void parseInputFile() {
         try (BufferedReader br = new BufferedReader(new FileReader(inputFile))){
-            String line;
             ParagraphFormatter formatter = new ParagraphFormatter(document);
+            Stack<String> lineStack = new Stack<>();
 
-            while ((line = br.readLine()) != null) {
-                formatter.processLine(line);
+            String line = br.readLine();
+            while (line != null) {
+                // Read all the commands
+                while (line != null && line.startsWith(".")) {
+                    lineStack.push(line);
+                    line = br.readLine();
+                }
+                while (line != null && !line.startsWith(".")) {
+                    lineStack.push(line);
+                    line = br.readLine();
+                }
+                formatter.processParagraph(lineStack);
+                lineStack.clear();
             }
             formatter.finishParagraph();
         } catch (IOException e) {
