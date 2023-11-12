@@ -19,6 +19,11 @@ public class App
             System.exit(1);
         }
 
+        if (!argsParser.ifEnoughPrivilegeForRead() || !argsParser.ifEnoughPrivilegeForWrite()) {
+            System.err.println("You do not have enough privileges to operate on the file.");
+            System.exit(1);
+        }
+
         PDFParser creator = new PDFParser(argsParser.getInputFilePath(), argsParser.getOutputFilePath());
         creator.createPDF();
     }

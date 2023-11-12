@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/output.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/CommandLineArgsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/CommandLineArgsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/ParagraphFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/ParagraphFormatter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +166,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java</url>
-          <line>41</line>
+          <line>59</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
