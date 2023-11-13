@@ -5,6 +5,7 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Stack;
@@ -16,6 +17,7 @@ public class PDFParser {
     private final String inputFile; // Path to the input file
     private final String outputFile; // Path to the output PDF file
     private Document document; // iText Document instance for PDF creation
+    private static final String outputFileDir = "./outputFileDir/";
 
     /**
      * Constructor for the PDFParser.
@@ -35,7 +37,9 @@ public class PDFParser {
      */
     public void createPDF() {
         try {
-            PdfWriter writer = new PdfWriter(outputFile); // Create a PdfWriter for the output file
+            new File(outputFileDir).mkdirs();
+
+            PdfWriter writer = new PdfWriter(outputFileDir + outputFile); // Create a PdfWriter for the output file
             PdfDocument pdfDoc = new PdfDocument(writer); // Create a PdfDocument
             this.document = new Document(pdfDoc); // Initialize the Document object
             parseInputFile(); // Parse the input file and fill the PDF

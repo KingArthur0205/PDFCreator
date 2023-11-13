@@ -21,7 +21,7 @@ public class CommandLineArgsParser {
     public CommandLineArgsParser(String[] args) {
         this.args = args;
         inputFilePath = args.length >= 1 ? args[0] : ""; // Set inputFilePath to the first arg or an empty string if no args
-        outputFilePath = args.length >= 2 ? args[1] : "./output.pdf"; // Set outputFilePath to the second arg or a default path
+        outputFilePath = args.length >= 2 ? args[1] : "output.pdf"; // Set outputFilePath to the second arg or a default path
     }
 
     /**

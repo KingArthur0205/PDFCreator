@@ -32,9 +32,9 @@ public class App
         }
 
         // Check if the application has enough privileges to read from and write to the specified files
-        if (!argsParser.ifEnoughPrivilegeForRead() || !argsParser.ifEnoughPrivilegeForWrite()) {
+        if (!argsParser.ifEnoughPrivilegeForRead()) {
             // Inform the user about insufficient file operation privileges and terminate the program
-            System.err.println("You do not have enough privileges to operate on the file.");
+            System.err.println("You do not have enough privileges to operate on the input file.");
             System.exit(1);
         }
 

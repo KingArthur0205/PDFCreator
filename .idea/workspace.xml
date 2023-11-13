@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gearset/TestParagraphFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/output.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/CommandLineArgsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/CommandLineArgsParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gearset/TestCommandLineArgsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gearset/TestCommandLineArgsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gearset/TestParagraphFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gearset/TestParagraphFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFile.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,71 +55,22 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestParagraphFormatter.testProcessParagraphWithCommands">
-    <configuration name="TestCommandLineArgsParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gearset.App" />
       <module name="PDFCreator" />
+      <option name="PROGRAM_PARAMETERS" value="input.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.gearset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestCommandLineArgsParser" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCommandLineArgsParser.testIfEnoughPrivilegeForReadWithReadableFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PDFCreator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gearset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestCommandLineArgsParser" />
-      <option name="METHOD_NAME" value="testIfEnoughPrivilegeForReadWithReadableFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCommandLineArgsParser.testIfEnoughPrivilegeForWriteWithWritableFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PDFCreator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gearset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestCommandLineArgsParser" />
-      <option name="METHOD_NAME" value="testIfEnoughPrivilegeForWriteWithWritableFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCommandLineArgsParser.testNullAsINputArg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PDFCreator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gearset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestCommandLineArgsParser" />
-      <option name="METHOD_NAME" value="testNullAsINputArg" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestParagraphFormatter.testProcessParagraphWithCommands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestParagraphFormatter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PDFCreator" />
       <extension name="coverage">
         <pattern>
@@ -129,26 +80,73 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.gearset" />
       <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
-      <option name="METHOD_NAME" value="testProcessParagraphWithCommands" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParagraphFormatter.testProcessParagraphWithItalic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PDFCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gearset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gearset" />
+      <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
+      <option name="METHOD_NAME" value="testProcessParagraphWithItalic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParagraphFormatter.testProcessParagraphWithLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PDFCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gearset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gearset" />
+      <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
+      <option name="METHOD_NAME" value="testProcessParagraphWithLarge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParagraphFormatter.testProcessParagraphWithNewParagrahs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PDFCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gearset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gearset" />
+      <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
+      <option name="METHOD_NAME" value="testProcessParagraphWithNewParagrahs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestCommandLineArgsParser" />
-      <item itemvalue="JUnit.TestCommandLineArgsParser.testIfEnoughPrivilegeForReadWithReadableFile" />
-      <item itemvalue="JUnit.TestCommandLineArgsParser.testIfEnoughPrivilegeForWriteWithWritableFile" />
-      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithCommands" />
-      <item itemvalue="JUnit.TestCommandLineArgsParser.testNullAsINputArg" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.TestParagraphFormatter" />
+      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithItalic" />
+      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithLarge" />
+      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithNewParagrahs" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithCommands" />
-        <item itemvalue="JUnit.TestCommandLineArgsParser.testNullAsINputArg" />
-        <item itemvalue="JUnit.TestCommandLineArgsParser" />
-        <item itemvalue="JUnit.TestCommandLineArgsParser.testIfEnoughPrivilegeForWriteWithWritableFile" />
-        <item itemvalue="JUnit.TestCommandLineArgsParser.testIfEnoughPrivilegeForReadWithReadableFile" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithNewParagrahs" />
+        <item itemvalue="JUnit.TestParagraphFormatter" />
+        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithLarge" />
+        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithItalic" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +166,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java</url>
-          <line>59</line>
+          <line>63</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
