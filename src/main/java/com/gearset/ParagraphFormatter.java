@@ -14,7 +14,7 @@ import java.util.Stack;
 import java.util.regex.Pattern;
 
 public class ParagraphFormatter {
-    private Document document; // The iText Document object to which paragraphs are added
+    private final Document document; // The iText Document object to which paragraphs are added
     private Paragraph currentParagraph; // The current Paragraph being constructed
     private PdfFont normalFont; // Normal text font
     private PdfFont boldFont; // Bold text font
@@ -72,7 +72,7 @@ public class ParagraphFormatter {
                     currentParagraph.setTextAlignment(TextAlignment.LEFT);
                     break;
                 default:
-                    processParagraphCommand(paragraphCommand, paragraphStack);
+                    processParagraphCommand(paragraphCommand);
             }
         }
         addText(paragraphTexts);
@@ -84,9 +84,8 @@ public class ParagraphFormatter {
      * This method handles specific formatting commands such as ".indent", ".bold", etc.
      *
      * @param command        The paragraph command.
-     * @param paragraphStack The stack of paragraph strings.
      */
-    private void processParagraphCommand(String command, Stack<String> paragraphStack) {
+    private void processParagraphCommand(String command) {
         if (command.startsWith(".indent")) {
             handleIndent(command);
         } else if (command.startsWith(".bold") || command.startsWith(".italics") || command.startsWith(".regular")) {

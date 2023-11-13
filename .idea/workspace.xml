@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gearset/TestParagraphFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gearset/TestParagraphFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile.pdf" beforeDir="false" />
-    </list>
+    <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
