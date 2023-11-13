@@ -63,6 +63,8 @@ public class PDFParser {
                     lineStack.push(line); // Stack command lines
                     line = br.readLine(); // Read next line
                 }
+
+                // Read all texts
                 while (line != null && !line.startsWith(".")) {
                     lineStack.push(line); // Stack text lines
                     line = br.readLine(); // Read next line
@@ -72,7 +74,8 @@ public class PDFParser {
             }
             formatter.finishParagraph(); // Finalize the paragraph processing
         } catch (IOException e) {
-            // Handle IOException if reading from the input file fails
+            System.err.println("Reading pdf commands error.");
+            System.exit(1);
         }
     }
 }

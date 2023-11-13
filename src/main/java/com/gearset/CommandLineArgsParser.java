@@ -40,7 +40,7 @@ public class CommandLineArgsParser {
             Paths.get(inputFilePath);
             Paths.get(outputFilePath);
         } catch (InvalidPathException | NullPointerException ex) {
-            ex.printStackTrace(); // Print stack trace if an exception occurs
+            System.err.println("Read path failed");
             return false;
         }
         return true; // Return true if no exception is thrown

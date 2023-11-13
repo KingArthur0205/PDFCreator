@@ -4,24 +4,35 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.lang.annotation.Target;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 
-import static junit.framework.Assert.assertFalse;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 public class TestCommandLineArgsParser {
     private CommandLineArgsParser parser;
 
     @Test
-    void testNoArgs() {
+    public void testConstructorWithNoArgs() {
         String[] args = {};
-        parser = new CommandLineArgsParser(args);
-        assertFalse(parser.isArgsValid());
+        CommandLineArgsParser parser = new CommandLineArgsParser(args);
+        assertEquals("", parser.getInputFilePath());
+        assertEquals("./output.pdf", parser.getOutputFilePath());
+    }
+
+    @Test
+    public void testConstructorWithValidArgs() {
+        String[] args = {"input.txt", "output.txt"};
+        CommandLineArgsParser parser = new CommandLineArgsParser(args);
+        assertEquals("input.txt", parser.getInputFilePath());
+        assertEquals("output.txt", parser.getOutputFilePath());
     }
 
     // ------------------------- Input Argument Tests -------------------------
+
     @Test
-    void testValidInputArg1() {
+    void testConstructorWithValidInputArg1() {
         String[] args = {"./input.txt"};
         parser = new CommandLineArgsParser(args);
         assertTrue(parser.isArgsValid());
@@ -50,23 +61,37 @@ public class TestCommandLineArgsParser {
 
     // ------------------------- Input File Tests -------------------------
     @Test
-    void testExistInputFile() {
-        String[] args = {"input.txt"};
-        parser = new CommandLineArgsParser(args);
-        assertTrue(parser.isArgsValid());
+    public void testIfFileExistWithExistingFile() throws Exception {
+        Path tempFile = Files.createTempFile(null, null);
+        String[] args = {tempFile.toString()};
+        CommandLineArgsParser parser = new CommandLineArgsParser(args);
         assertTrue(parser.ifFileExist());
+        Files.delete(tempFile); // Clean up
     }
 
     @Test
-    void testNonExistInputFile() {
-        String[] args = {"non-existent.something"};
-        parser = new CommandLineArgsParser(args);
-        assertTrue(parser.isArgsValid());
+    public void testIfFileExistWithNonExistingFile() {
+        String[] args = {"nonexistingfile.txt"};
+        CommandLineArgsParser parser = new CommandLineArgsParser(args);
         assertFalse(parser.ifFileExist());
     }
 
     @Test
-    void hi() {
-        File file = new File(new String());
+    public void testIfEnoughPrivilegeForReadWithReadableFile() throws Exception {
+        Path tempFile = Files.createTempFile(null, null);
+        String[] args = {tempFile.toString()};
+        CommandLineArgsParser parser = new CommandLineArgsParser(args);
+        assertTrue(parser.ifEnoughPrivilegeForRead());
+        Files.delete(tempFile); // Clean up
     }
+
+    @Test
+    public void testIfEnoughPrivilegeForWriteWithWritableFile() throws Exception {
+        Path tempFile = Files.createTempFile(null, null);
+        String[] args = {tempFile.toString(), tempFile.toString()};
+        CommandLineArgsParser parser = new CommandLineArgsParser(args);
+        assertTrue(parser.ifEnoughPrivilegeForWrite());
+        Files.delete(tempFile); // Clean up
+    }
+
 }
