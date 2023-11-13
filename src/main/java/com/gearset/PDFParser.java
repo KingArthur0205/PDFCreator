@@ -46,7 +46,7 @@ public class PDFParser {
             document.close(); // Close the document after parsing
         } catch (IOException e) {
             System.err.println("PDF creation failed."); // Log error message
-            e.printStackTrace(); // Print stack trace for debugging
+            //e.printStackTrace(); // Print stack trace for debugging
             System.exit(1); // Exit the program with an error code
         }
     }

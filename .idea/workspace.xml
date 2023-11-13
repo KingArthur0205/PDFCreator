@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="" />
+    <list default="true" id="d05697d8-ca17-4a05-abe6-9fa367c6508d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputFileDir/output.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gearset/PDFParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gearset/TestCommandLineArgsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gearset/TestCommandLineArgsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/testFile0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/testFile1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/testFile2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/testFile3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/testFile4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFiles/testFile5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile5.pdf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,13 +53,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.14648438",
+    "project.structure.side.proportion": "0.32875144",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.TestParagraphFormatter">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gearset.App" />
       <module name="PDFCreator" />
@@ -58,6 +70,36 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PDFCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gearset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gearset" />
+      <option name="MAIN_CLASS_NAME" value="com.gearset.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCommandLineArgsParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PDFCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gearset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gearset" />
+      <option name="MAIN_CLASS_NAME" value="com.gearset.TestCommandLineArgsParser" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,68 +119,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParagraphFormatter.testProcessParagraphWithItalic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PDFCreator-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/PDFCreator-1.0-SNAPSHOT.jar" />
+      <option name="PROGRAM_PARAMETERS" value="input.txt" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <module name="PDFCreator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gearset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
-      <option name="METHOD_NAME" value="testProcessParagraphWithItalic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestParagraphFormatter.testProcessParagraphWithLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PDFCreator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gearset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
-      <option name="METHOD_NAME" value="testProcessParagraphWithLarge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestParagraphFormatter.testProcessParagraphWithNewParagrahs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PDFCreator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gearset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gearset" />
-      <option name="MAIN_CLASS_NAME" value="com.gearset.TestParagraphFormatter" />
-      <option name="METHOD_NAME" value="testProcessParagraphWithNewParagrahs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.App" />
+      <item itemvalue="JAR Application.PDFCreator-1.0-SNAPSHOT.jar" />
+      <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="JUnit.TestCommandLineArgsParser" />
       <item itemvalue="JUnit.TestParagraphFormatter" />
-      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithItalic" />
-      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithLarge" />
-      <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithNewParagrahs" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithNewParagrahs" />
         <item itemvalue="JUnit.TestParagraphFormatter" />
-        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithLarge" />
-        <item itemvalue="JUnit.TestParagraphFormatter.testProcessParagraphWithItalic" />
+        <item itemvalue="JUnit.TestCommandLineArgsParser" />
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.PDFCreator-1.0-SNAPSHOT.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +153,17 @@
       <updated>1699395691253</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

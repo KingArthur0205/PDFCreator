@@ -18,7 +18,7 @@ public class TestCommandLineArgsParser {
         String[] args = {};
         CommandLineArgsParser parser = new CommandLineArgsParser(args);
         assertEquals("", parser.getInputFilePath());
-        assertEquals("./output.pdf", parser.getOutputFilePath());
+        assertEquals("output.pdf", parser.getOutputFilePath());
     }
 
     @Test
